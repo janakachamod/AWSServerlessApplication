@@ -1,0 +1,34 @@
+.artist-details {
+    padding: 20px;
+  }
+  
+  .details {
+    display: flex;
+    align-items: center;
+  }
+  
+  .artist-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .actions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+  

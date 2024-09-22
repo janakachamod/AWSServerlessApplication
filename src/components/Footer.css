@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100%; /* Ensure full height */
+}
+
+/* Footer styling */
+.footer {
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  z-index: 1000;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff; /* Background color for footer */
+  color: #ffffff; /* White text color */
+  /* border-top: 1px solid #444444; */ /* Removed horizontal line (border) */
+}
+
+/* Show footer when at the bottom */
+.footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer text styling */
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer span {
+  color: #ff6f61; /* Accent color for text */
+  font-weight: bold;
+}
+
+.heart {
+  color: #ff6f61; /* Accent color for heart */
+}
+
+/* Social icons styling */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ffffff; /* White color for icons */
+  margin: 0 10px;
+  font-size: 1.5rem; /* Adjust icon size */
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ff6f61; /* Accent color on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer {
+    padding: 10px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .social-icons a {
+    font-size: 1.2rem;
+    margin: 0 5px;
+  }
+}

@@ -1,0 +1,45 @@
+/* GetPremiumTrackDetails.css */
+
+.tracks-list {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  audio {
+    max-width: 200px; /* Adjust size as needed */
+    margin: 5px 0;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  

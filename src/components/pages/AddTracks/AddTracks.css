@@ -1,0 +1,116 @@
+/* Container for the Add Track form */
+.add-track {
+  padding: 25px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Flex container for the form */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Styles for the upload section */
+.add-track-upload {
+  margin-bottom: 25px;
+}
+
+/* Button styling for file upload */
+.file-upload-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-upload-button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.file-upload-button:active {
+  background-color: #004494;
+}
+
+.file-upload-button input {
+  display: none;
+}
+
+/* Styles for track name input */
+.add-track-info {
+  margin-bottom: 25px;
+}
+
+.add-track-info p {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #333333;
+}
+
+.add-track-info input,
+.add-track-info select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dddddd;
+  font-size: 16px;
+  color: #333333;
+  transition: border-color 0.3s ease;
+}
+
+.add-track-info input:focus,
+.add-track-info select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+.add-button {
+  background-color: #28a745;
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .add-track {
+    padding: 15px;
+  }
+
+  .file-upload-button, .add-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .add-track-info input, .add-track-info select {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

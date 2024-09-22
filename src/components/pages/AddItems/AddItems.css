@@ -1,0 +1,120 @@
+/* General Form Container */
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    padding: 20px;
+  }
+  
+  .add form {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 700px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+  }
+  
+  /* Flex column styling for consistent layout */
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  /* File Upload Button Styling */
+  .file-upload-button {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .file-upload-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .file-upload-button input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Image Preview Styling */
+  .image-preview {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background: #f8f8f8;
+  }
+  
+  /* Input and Select Styling */
+  .add-product-name input,
+  .add-number-of-tracks input,
+  .add-year input,
+  .add-category select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .add-category select {
+    padding: 10px 15px;
+  }
+  
+  .add-product-name input:focus,
+  .add-number-of-tracks input:focus,
+  .add-year input:focus,
+  .add-category select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  button.add-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  button.add-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.add-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  button.add-button:focus {
+    outline: none;
+  }
+  

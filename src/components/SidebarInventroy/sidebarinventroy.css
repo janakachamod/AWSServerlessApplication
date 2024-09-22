@@ -1,0 +1,54 @@
+/* sidebar.css */
+
+.sidebar {
+    height: 100vh; /* Full viewport height */
+    width: 18%; /* Adjust as needed */
+    background-color: #f4f4f4; /* Background color */
+    position: fixed; /* Fix it on the side */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+    border-right: 1.5px solid #a9a9a9; /* Border to separate from content */
+    margin-top: 20px; /* Adjust this value to move the sidebar down from the top */
+    padding-top: 50px; /* Padding at the top of the sidebar content */
+    font-size: max(1vw, 10px); /* Responsive font size */
+  }
+  
+  .sidebar-options {
+    padding-left: 20px; /* Adjust padding for inner content */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: 1px solid #a9a9a9;
+    padding: 8px 10px;
+    border-radius: 15px 0px 0px 15px;
+    cursor: pointer;
+    text-decoration: none; /* Ensure links are not underlined */
+    color: #333; /* Default text color */
+  }
+  
+  .sidebar-option:hover {
+    background-color: #ddd; /* Highlight color on hover */
+  }
+  
+  .sidebar-option.active {
+    background-color: tomato; /* Active link background color */
+    color: white; /* Active link text color */
+  }
+  
+  .sidebar-option.active img {
+    filter: invert(100%); /* Optional: invert image color for active state */
+  }
+  
+  @media (max-width: 900px) {
+    .sidebar-option p {
+      display: none; /* Hide text on smaller screens */
+    }
+  }
+  

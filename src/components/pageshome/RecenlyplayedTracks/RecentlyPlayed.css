@@ -1,0 +1,144 @@
+/* General Track Display Styles */
+.track-display {
+  padding: 40px;
+  background-color: #f0f0f0; /* Very light gray background */
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of child elements */
+}
+
+/* Track Item Container */
+.track-display-list {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  gap: 20px; /* Space between items */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent wrapping of child elements */
+  padding-bottom: 20px; /* Extra space at the bottom to avoid clipping */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  flex-wrap: nowrap; /* Ensure items do not wrap to the next line */
+}
+
+/* Track Item Styles */
+.track-item {
+  background-color: #ffffff; /* White background for items */
+  border: 1px solid #e0e0e0; /* Light gray border for items */
+  border-radius: 12px; /* Rounder corners for a soft look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for subtle elevation */
+  padding: 20px;
+  width: 280px; /* Fixed width */
+  height: 250px; /* Fixed height */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: inline-block; /* Ensure items are inline for horizontal scrolling */
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.track-item:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+  background-color: #f8f9fa; /* Slightly lighter background on hover */
+}
+
+/* Artist Image Styling */
+.artist-image {
+  border-radius: 50%; /* Circular image */
+  width: 80px; /* Fixed size for images */
+  height: 80px;
+  object-fit: cover;
+  background-color: #e0e0e0; /* Light gray placeholder background */
+  margin-bottom: 15px;
+  border: 2px solid #c0c0c0; /* Light border around the image */
+}
+
+/* Track Item Information */
+.track-item-info {
+  margin-top: 10px;
+}
+
+.track-item-info h3 {
+  font-size: 1.6rem; /* Larger font size for better readability */
+  margin-bottom: 10px;
+  color: #212529; /* Dark text for contrast */
+  font-weight: 600; /* Bolder text for emphasis */
+}
+
+.track-item-info p {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #495057; /* Darker gray for better readability */
+}
+
+/* Favorite Button */
+.favorite-button {
+  position: absolute;
+  top: 15px; /* Adjusted for better placement */
+  right: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem; /* Large heart icon */
+  color: #e63946; /* Red color for prominence */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth color transition */
+}
+
+.favorite-button:hover {
+  color: #d62839; /* Darker red on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
+/* Loading and Error States */
+.loading, .error {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem; /* Larger font size for readability */
+  color: #212529; /* Dark text for contrast */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .track-item {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 400px; /* Ensure it doesn't exceed a reasonable width */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .artist-image {
+    width: 70px; /* Slightly smaller size on medium screens */
+    height: 70px;
+  }
+
+  .track-item-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .track-item-info p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .track-display h2 {
+    font-size: 2.2rem; /* Adjusted font size for smaller screens */
+  }
+
+  .track-item {
+    width: 100%; /* Full width on even smaller screens */
+    height: auto; /* Adjust height based on content */
+  }
+
+  .artist-image {
+    width: 60px; /* Smaller size on small screens */
+    height: 60px;
+  }
+
+  .track-item-info h3 {
+    font-size: 1.4rem;
+  }
+
+  .track-item-info p {
+    font-size: 1rem;
+  }
+}

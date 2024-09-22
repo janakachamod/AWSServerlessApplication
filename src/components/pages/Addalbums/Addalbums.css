@@ -1,0 +1,64 @@
+/* AddAlbums.css */
+.add-album {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .add-album-upload,
+  .add-album-info {
+    margin-bottom: 20px;
+  }
+  
+  .file-upload-button {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+  }
+  
+  .file-upload-button input {
+    display: none;
+  }
+  
+  .add-album-info > div {
+    margin-bottom: 15px;
+  }
+  
+  .add-album-info p {
+    margin: 0 0 5px;
+  }
+  
+  .add-album-info input,
+  .add-album-info textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .add-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .add-button:hover {
+    background-color: #218838;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  

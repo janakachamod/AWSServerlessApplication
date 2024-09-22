@@ -1,0 +1,75 @@
+/* Container for the entire view albums page */
+.view-albums {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Loader and error messages */
+  .view-albums p {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  /* Table styling */
+  .albums-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .albums-table th, .albums-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .albums-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Styling for images */
+  .album-art, .artist-avatar {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+  }
+  
+  /* Ensure images are centered */
+  .album-art, .artist-avatar {
+    margin: 0 auto;
+  }
+  
+  /* Make table responsive */
+  @media (max-width: 768px) {
+    .albums-table {
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  
+    .albums-table th, .albums-table td {
+      white-space: nowrap;
+      display: block;
+      width: 100%;
+    }
+  
+    .albums-table td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+  
+    .albums-table td::before {
+      content: attr(data-label);
+      position: absolute;
+      left: 0;
+      width: 45%;
+      padding-left: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+    }
+  }
+  

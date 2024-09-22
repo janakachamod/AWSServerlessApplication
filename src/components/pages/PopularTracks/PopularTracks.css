@@ -1,0 +1,87 @@
+.popular-tracks-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .tracks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tracks-table th, .tracks-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .tracks-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .artist-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  audio {
+    width: 100%;
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .email-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .generate-report-button, .send-report-button, .close-popup-button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .generate-report-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .send-report-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .close-popup-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  

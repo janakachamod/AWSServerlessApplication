@@ -1,0 +1,217 @@
+/* Main container */
+.explore-menu {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #333333, #555555); /* Dark grey gradient background */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for better contrast */
+  position: relative; /* Position relative for arrow positioning */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Main Title */
+.explore-menu h1 {
+  font-size: 2.5rem;
+  color: #e0e0e0; /* Light grey text to contrast with the dark background */
+  text-align: center; /* Centered title */
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Subtitle (Description text) */
+.explore-menu-text {
+  font-size: 1.2rem;
+  color: #c0c0c0; /* Slightly lighter grey text color */
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section titles (Genres, Artists) */
+.filter-section h2 {
+  font-size: 1.5rem;
+  color: #e0e0e0; /* Light grey text */
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Filter container */
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between sort buttons and filters */
+  margin-bottom: 15px;
+  position: relative; /* Position relative for arrow positioning */
+}
+
+/* Sort Buttons Container */
+.sort-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Sort Buttons */
+.sort-button {
+  padding: 8px 12px;
+  background-color: #666666; /* Medium grey color for sort buttons */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  width: 40px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+  background-color: #444444; /* Darker grey on hover */
+}
+
+/* Filters Container */
+.explore-menu-list-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* Hide horizontal scrollbar */
+  position: relative; /* Position relative for arrows */
+  flex: 1; /* Ensure container stretches to fill available space */
+  width: 100%; /* Full width */
+}
+
+/* Filters */
+.explore-menu-list {
+  display: flex;
+  gap: 15px; /* Space between filters */
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide horizontal scrollbar */
+  flex: 1; /* Ensure filters container stretches to fill available space */
+}
+
+/* Individual Filter Item */
+.explore-menu-list-item {
+  flex: 1 0 auto; /* Flexible item width */
+  min-width: calc((100% / 5) - 15px); /* Show exactly five filters */
+  height: 50px;
+  padding: 10px;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.explore-menu-list-item:hover {
+  background-color: #ffffff; /* White background on hover */
+  color: #000000; /* Black text on hover */
+  transform: translateY(-3px); /* Lift on hover */
+}
+
+.explore-menu-list-item.active {
+  background-color: #74b9ff; /* Blue for active filter */
+  color: #ffffff; /* White text */
+  font-weight: bold;
+}
+
+/* Make filter text bold */
+.explore-menu-list-item p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: bold; /* Bold text inside filters */
+}
+
+/* Arrows for scrolling */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #666666; /* Medium grey background for arrows */
+  border: 2px solid #333333; /* Dark grey border color */
+  border-radius: 50%; /* Circular arrows */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #444444; /* Darker grey background on hover */
+}
+
+/* Left arrow */
+.arrow-left {
+  left: 10px; /* Positioning arrows close to the container edges */
+}
+
+/* Right arrow */
+.arrow-right {
+  right: 10px;
+  margin-left: 10px; /* Small gap between arrows */
+}
+
+/* Hide scrollbar */
+.explore-menu-list-container::-webkit-scrollbar {
+  display: none; /* Hide horizontal scrollbar */
+}
+
+/* Remove the separating line */
+hr {
+  display: none;
+}
+
+.music-discovery {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Margin above and below the text */
+}
+
+/* Music Discovery Text */
+.music-discovery-text {
+  font-size: 1.2rem;
+  font-weight: 500; /* Slightly bold */
+  color: #e0e0e0; /* Light grey text */
+  background: rgba(0, 0, 0, 0.4); /* Darker semi-transparent background for contrast */
+  padding: 15px 25px;
+  border-radius: 12px; /* Rounded corners */
+  display: inline-block; /* Fit the background around the text */
+  max-width: 90%; /* Responsive width */
+  margin: 0 auto; /* Center the element */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  line-height: 1.4; /* Improve readability */
+}
+
+.music-discovery-text:hover {
+  background-color: #666666; /* Medium grey background on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .explore-menu h1 {
+    font-size: 2rem;
+  }
+
+  .filter-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .explore-menu-list-item {
+    min-width: calc((100% / 3) - 15px); /* Adjust for smaller screens */
+    height: 45px;
+    font-size: 0.9rem;
+  }
+
+  .sort-button {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,175 @@
+/* Container for the entire component */
+.list {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+.list h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #212529;
+  text-align: center;
+}
+
+/* Loading and error messages */
+.loading, .error {
+  font-size: 1.2rem;
+  color: #dc3545; /* Bootstrap danger color for consistency */
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Form container for editing */
+.edit-form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+/* Input styles */
+.edit-form input, .edit-form select, .edit-form button {
+  width: calc(100% - 22px);
+  margin-bottom: 18px;
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.edit-form input:focus, .edit-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Select styles */
+.edit-form select {
+  background-color: #ffffff;
+}
+
+/* File upload styles */
+.add-image-upload, .add-music-upload {
+  margin-bottom: 18px;
+}
+
+.file-upload-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.file-upload-button input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.file-upload-button:hover {
+  background-color: #0056b3;
+}
+
+/* Image preview */
+.image-preview {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+/* Table for displaying items */
+.list-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.list-table-format {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.list-table-format.title {
+  font-weight: bold;
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.list-table-format img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.list-table-format p {
+  margin: 0;
+  color: #495057;
+}
+
+.list-table-format button {
+  background-color: #dc3545;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s;
+}
+
+.list-table-format button:hover {
+  background-color: #c82333;
+}
+
+.list-table-format button:last-child {
+  background-color: #28a745;
+}
+
+.list-table-format button:last-child:hover {
+  background-color: #218838;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .list-table-format {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .list-table-format img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .list-table-format {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}

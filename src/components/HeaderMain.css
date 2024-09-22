@@ -1,0 +1,154 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+/* HeaderMain.css */
+.navbar {
+  background-color: #1e1e1e;
+}
+
+.navbar-brand img {
+  margin-right: 10px;
+}
+
+.navbar-brand {
+  color: #f8f9fa !important;
+  font-size: 1.5rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+#brand_name {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #f8f9fa !important;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff6f61 !important;
+}
+
+.dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+
+.dropdown-item {
+  color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ff6f61;
+  color: #fff;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-text {
+  color: #f8f9fa;
+}
+
+.name-color {
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #495057;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .navbar-text {
+    margin-top: 10px;
+  }
+}
+
+/* HeaderMain.css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.popup-content h4 {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.navbar-logo {
+  display: inline-block;
+  width: 30px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+  vertical-align: middle; /* Align with text */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.navbar-logo:hover {
+  transform: scale(1.1); /* Slightly enlarge the logo on hover */
+}

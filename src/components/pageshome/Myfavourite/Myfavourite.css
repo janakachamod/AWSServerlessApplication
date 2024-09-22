@@ -1,0 +1,42 @@
+.favorites-page {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .favorites-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .favorites-table th, .favorites-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .favorites-table th {
+    background-color: #f4f4f4;
+    text-align: left;
+  }
+  
+  .favorites-table td {
+    vertical-align: middle;
+  }
+  
+  .album-art {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .loading {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

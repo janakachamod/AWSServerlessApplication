@@ -1,0 +1,158 @@
+/* Header Styling */
+.navbar {
+    background-color: #333; /* Dark background color for navbar */
+    padding: 0.5rem 1rem; /* Padding for navbar */
+  }
+  
+  .navbar-brand img {
+    max-height: 30px; /* Ensure logo image height */
+    filter: brightness(0) invert(1); /* Ensure logo image color is white */
+  }
+  
+  #brand_name {
+    color: #ffffff; /* White color for brand name */
+    font-size: 1.5rem; /* Size of the brand name */
+    font-weight: bold;
+    margin-left: 0.5rem; /* Spacing between logo and brand name */
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+    color: #ffffff; /* White color for links */
+    padding: 0.5rem 1rem; /* Padding for nav links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #ff6f61; /* Accent color on hover */
+  }
+  
+  .btn-group .btn {
+    color: #ffffff; /* White text for buttons */
+    background-color: #444; /* Dark background for buttons */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    padding: 0.5rem 1rem; /* Padding for buttons */
+  }
+  
+  .btn-group .btn:hover {
+    background-color: #ff6f61; /* Accent color on hover */
+  }
+  
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1050;
+  }
+  
+  .popup-content {
+    background: #ffffff; /* White background for popup */
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem;
+    width: 90%;
+    max-width: 500px; /* Max width of the popup */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff6f61; /* Accent color for close button */
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .close-btn:hover {
+    background: #ff4d40; /* Darker shade on hover */
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .button-group .btn {
+    flex: 1;
+  }
+  
+  .navbar-text {
+    color: #ffffff; /* White color for logged-in text */
+    font-weight: bold;
+  }
+  
+  .name-color {
+    color: #ff6f61; /* Accent color for username */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .navbar-toggler {
+      border: none; /* Remove border from toggler */
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 0.5rem;
+    }
+  
+    .popup-content {
+      width: 90%; /* Full width for mobile */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #brand_name {
+      font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .btn-group .btn {
+      padding: 0.4rem;
+      font-size: 0.9rem; /* Adjust button size for smaller screens */
+    }
+  
+    .popup-content {
+      width: 95%; /* Even more responsive for very small screens */
+    }
+  }
+  /* Font Awesome icon styling */
+.navbar .navbar-brand i {
+    color: #ffffff; /* Icon color */
+    font-size: 2rem; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .navbar .navbar-brand i:hover {
+    color: #ff6f61; /* Change color on hover */
+  }
+  
+  /* Optional: Adjust position or alignment if needed */
+  .navbar .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar .navbar-brand i {
+    margin-right: 8px; /* Space between icon and text */
+  }
+  

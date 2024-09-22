@@ -1,0 +1,132 @@
+/* ListTracks.css */
+
+.list-tracks {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+  }
+  
+  /* Styles for the modal pop-up */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Edit form styling inside the modal */
+  .edit-form {
+    margin: 0;
+  }
+  
+  .edit-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .upload-file {
+    margin-bottom: 10px;
+  }
+  
+  .file-upload-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .file-upload-button input {
+    display: none;
+  }
+  
+  .edit-form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+  }
+  
+  /* Enhanced table styling */
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .list-table-format {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr 1fr 1fr;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+  }
+  
+  .list-table-format.title {
+    font-weight: bold;
+    background-color: #0d0d0d;
+  }
+  
+  .list-table-format img,
+  .list-table-format audio {
+    max-width: 100px;
+  }
+  
+  .list-table-format button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .list-table-format button:hover {
+    background-color: #0056b3;
+  }
+  

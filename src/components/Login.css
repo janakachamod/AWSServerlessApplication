@@ -1,0 +1,96 @@
+/* Overall Container Styling */
+.login-container {
+    background: linear-gradient(135deg, #f0f4f8, #e4e9f2);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  .login-container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Group Styling */
+  .input-group {
+    margin: 15px 0;
+  }
+  
+  .input-group input,
+  .input-group select {
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Button Styling */
+  .btn {
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .btn-outline-info {
+    border: 1px solid #17a2b8;
+    color: #17a2b8;
+  }
+  
+  .btn-outline-info:hover {
+    background-color: #17a2b8;
+    color: #ffffff;
+  }
+  
+  /* Password Toggle Button Styling */
+  .btn-outline-secondary {
+    border-radius: 8px;
+    padding: 8px;
+    font-size: 0.9rem;
+    margin-left: -2px;
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: #dc3545;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+  /* Signup/Login Toggle Text */
+  .login-signup {
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: underline;
+    color: #007bff;
+  }
+  
+  .login-signup:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .input-group {
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  

@@ -1,0 +1,27 @@
+.favorites-page {
+    padding: 20px;
+  }
+  
+  .favorites-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .favorites-table th,
+  .favorites-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .favorites-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .artist-avatar {
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Ensure it maintains aspect ratio */
+    object-fit: cover; /* Maintain aspect ratio and cover area */
+    border-radius: 50%; /* Optional: make it circular */
+  }
+  

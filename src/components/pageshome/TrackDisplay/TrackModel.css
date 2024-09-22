@@ -1,0 +1,78 @@
+/* Modal Overlay */
+.track-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  /* Modal Content */
+  .track-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    position: relative;
+  }
+  
+  /* Close Button */
+  .track-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #f44336; /* Red background for close button */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .track-modal-close:hover {
+    background: #c62828; /* Darker red on hover */
+  }
+  
+  /* Track Art */
+  .track-modal-art {
+    width: 100%;
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  /* Modal Title */
+  .track-modal-content h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #212529; /* Darker color for the title */
+  }
+  
+  /* Modal Text */
+  .track-modal-content p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  /* Audio Player */
+  .track-modal-audio {
+    margin-top: 20px;
+  }
+  
+  .track-modal-audio audio {
+    width: 100%; /* Ensure the audio player is responsive */
+  }
+  

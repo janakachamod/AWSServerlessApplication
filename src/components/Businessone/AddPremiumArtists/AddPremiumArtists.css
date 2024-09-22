@@ -1,0 +1,44 @@
+.add-artist {
+    padding: 20px;
+  }
+  
+  .add-artist-upload,
+  .add-artist-info {
+    margin-bottom: 15px;
+  }
+  
+  .file-upload-button {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .file-upload-button input {
+    display: none;
+  }
+  
+  .add-artist-info p {
+    margin: 0 0 5px;
+  }
+  
+  .add-artist-info input,
+  .add-artist-info textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  .add-button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .add-button:hover {
+    background: #0056b3;
+  }
+  
